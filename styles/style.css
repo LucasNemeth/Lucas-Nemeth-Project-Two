@@ -420,6 +420,12 @@ header ul li h2 {
   width: 50%;
 }
 
+.mid-top .favourite-flex .favourite-img img {
+  -webkit-box-shadow: -120px 10px #A82706, 10px 10px #A82706;
+          box-shadow: -120px 10px #A82706, 10px 10px #A82706;
+  position: relative;
+}
+
 .mid-bottom .travel-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,6 +443,11 @@ header ul li h2 {
   width: 50%;
 }
 
+.mid-bottom .travel-flex .travel-img img {
+  -webkit-box-shadow: 120px 10px #F6A823, 10px 10px #F6A823;
+          box-shadow: 120px 10px #F6A823, 10px 10px #F6A823;
+}
+
 .home-content {
   background-color: #F0EFED;
 }
@@ -447,6 +458,10 @@ header ul li h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.home-content .home-container i {
+  background-color: #F6A823;
 }
 
 .home-content .home-container li {
