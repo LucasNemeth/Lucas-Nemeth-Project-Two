@@ -3,5 +3,35 @@ header{
         background-image: url(../styles/sophie-assets/blog-image-1.jpg);
         background-size: cover;
         height:50vh;
+        h1{
+            margin: 0;
+            font-family: 'Lato', serif;
+            font-size: 6rem;
+            position: relative;
+            top:260px;
+            left:60px;
+        }
     }
+}
+main{
+    background: #F0EFED;
+    .about-container{
+        background: white;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding:20px;
+        p{
+            margin:0;
+            a{
+                text-transform: none;  
+                color: #285E64;
+                font-weight: bold;
+            }//I understand we shouldn't have more than 3 nested elements, just not sure where else to put this a tag without being redundant 
+        }
+    }
+}
+
+.recent-posts{
+    
 }

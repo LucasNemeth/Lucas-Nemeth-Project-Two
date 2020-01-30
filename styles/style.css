@@ -529,3 +529,39 @@ header .header-bg {
   background-size: cover;
   height: 50vh;
 }
+
+header .header-bg h1 {
+  margin: 0;
+  font-family: 'Lato', serif;
+  font-size: 6rem;
+  position: relative;
+  top: 260px;
+  left: 60px;
+}
+
+main {
+  background: #F0EFED;
+}
+
+main .about-container {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  padding: 20px;
+}
+
+main .about-container p {
+  margin: 0;
+}
+
+main .about-container p a {
+  text-transform: none;
+  color: #285E64;
+  font-weight: bold;
+}
