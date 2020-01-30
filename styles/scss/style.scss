@@ -1,69 +1,14 @@
 @import "setup";
 @import "variables";
 @import "buttons";
-
-/*  
+@import "general";
+  
 
     // font-family: 'Lora', serif;
 
     // font-family: 'Roboto', sans-serif;
-    -----------------general styles---------------------------------------*/
-.wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-    width:80%;
-}
-html {
-    font-size: 62.5%;
-}
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-img{
-    width: 100%;
-}
-
-p{
-    line-height: 1.5;
-    font-family: 'roboto', sans-serif;
-    font-size: 1.4rem;
-}
-
-h1{
-    font-family: 'lora', serif;
-    font-weight: bold;
-}
-
-h2, h3 {
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-h1,
-h2,
-h3,
-a{
-    text-transform: uppercase;
-}
-h1{
-    font-size: 10rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-h3{
-    font-size: 2rem;
-}
-
-//-------------------------Header styles------------------------------------
+//-------------------------Header styles------------------------------------//
 
 header {
     background-color: $primary-color;
@@ -136,9 +81,10 @@ header {
         }
         .favourite-img {
             width: 50%;
+            position: relative;
+            bottom: 3rem;
             img{
-                box-shadow: -120px 10px #A82706, 10px 10px #A82706;
-                position:relative
+                box-shadow: -140px 10px #A82706, 10px 10px #A82706;
             }
         }
     }
@@ -155,8 +101,10 @@ header {
         }
         .travel-img{
             width: 50%;
+            position: relative;
+            top:2rem;
             img{
-                box-shadow: 120px 10px $primary-color, 10px 10px $primary-color; 
+                box-shadow: 140px 10px $primary-color, 10px 10px $primary-color; 
             }
         }
     }
@@ -190,5 +138,24 @@ header {
             width: 70%;
             margin-left:20px;
         }
+    }
+}
+.img-gallery{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: calc((100% - 70px) / 3);
+            margin: 40px 10px;
+        }
+    }
+}
+
+footer{
+    background-color: #2C2C2C;
+    p{
+        text-align: center;
+        color: #F0EFED;
+        margin:0;
     }
 }
