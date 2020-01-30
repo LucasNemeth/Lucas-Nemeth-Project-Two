@@ -19,8 +19,9 @@ main{
         background: white;
         display: flex;
         flex-direction: column;
-        width: 40%;
         padding:20px;
+        margin-top: 40px;
+        align-self: flex-start;   //The element was stretching when flex wrapped. so this got it back to normal// 
         p{
             margin:0;
             a{
@@ -32,6 +33,58 @@ main{
     }
 }
 
+.flex-contain{
+    display: flex;  
+    flex-direction: column;
+    width: 30%;
+}
+
+main{
+    .wrapper:first-of-type{
+        display: flex;
+        position: relative;
+        h1{
+            position: absolute;
+            font-size: 6rem;
+            top:-11.5rem
+        }
+    }
+}
 .recent-posts{
-    
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+        h3{
+            margin-top: 0;
+        }
+        ul{
+            text-align: center;
+            list-style-type: none;
+            li::before {                    //----thank you w3schools---//
+            content: "\2022"; 
+            color: $primary-color; 
+            display: inline-block; 
+            width: 1rem; 
+            margin-left: -2em; 
+            }
+            a{
+                font-family: 'roboto', sans-serif;
+                font-size: 1.4rem;
+                text-transform: none;
+                line-height: 1.5;
+            }
+        }
+}
+.blog-post{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.main-contain{
+    width: 70%;
 }

@@ -552,8 +552,10 @@ main .about-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
   padding: 20px;
+  margin-top: 40px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 main .about-container p {
@@ -564,4 +566,83 @@ main .about-container p a {
   text-transform: none;
   color: #285E64;
   font-weight: bold;
+}
+
+.flex-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+main .wrapper:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+main .wrapper:first-of-type h1 {
+  position: absolute;
+  font-size: 6rem;
+  top: -11.5rem;
+}
+
+.recent-posts {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.recent-posts h3 {
+  margin-top: 0;
+}
+
+.recent-posts ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+.recent-posts ul li::before {
+  content: "\2022";
+  color: #F6A823;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -2em;
+}
+
+.recent-posts ul a {
+  font-family: 'roboto', sans-serif;
+  font-size: 1.4rem;
+  text-transform: none;
+  line-height: 1.5;
+}
+
+.blog-post {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.main-contain {
+  width: 70%;
 }
