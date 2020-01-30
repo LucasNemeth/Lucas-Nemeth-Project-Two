@@ -1,2 +1,16 @@
 $primary-color:#F6A823;
 $secondary-color:#05AFC1;
+
+@mixin flex-row($justify: center, $align: center) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-col ($justify: center, $align: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;    
+}
