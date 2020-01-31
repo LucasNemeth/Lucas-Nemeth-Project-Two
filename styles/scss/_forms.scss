@@ -1,5 +1,6 @@
 .form-entry{
     margin-left:20px;
+    margin-top: 20px;
     .flex-form-contain{
         display: flex;
         flex-direction: column;
@@ -7,9 +8,32 @@
             display: flex;
             input[type='text']{
                 width:50%;
+                height: 40px;
+                border: none;
+                text-indent: 30px;
             }
         }
     }   button{
         width: 100%;
+        text-transform: uppercase;
+        font-family: 'roboto' sans-serif;
+        font-weight: bold;
+        margin: 20px 0 40px 0;
     }
+}
+input[type='text']:nth-of-type(2){
+    margin-left: 10px;
+}
+input[type='text']::placeholder{
+    font-style: italic;
+    padding-top: 10px;
+}
+
+textarea{
+    margin-top: 20px;
+    border: none;
+    text-indent: 30px;
+}
+textarea::placeholder{
+    font-style: italic;
 }

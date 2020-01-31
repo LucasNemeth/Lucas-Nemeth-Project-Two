@@ -526,6 +526,11 @@ footer p {
 
 header ul {
   margin: auto;
+  width: 100%;
+}
+
+header ul li {
+  margin: 0 5%;
 }
 
 header .header-bg {
@@ -663,7 +668,7 @@ main .wrapper:first-of-type h1 {
   background: white;
   padding: 20px;
   margin-left: 20px;
-  border-bottom: solid 3px #F6A823;
+  margin-top: 20px;
 }
 
 .post-1 .post-img-contain,
@@ -677,8 +682,13 @@ main .wrapper:first-of-type h1 {
   padding: 0 20px 20px 10px;
 }
 
+.post-2 {
+  border-bottom: 3px solid #F6A823;
+}
+
 .form-entry {
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 .form-entry .flex-form-contain {
@@ -699,8 +709,61 @@ main .wrapper:first-of-type h1 {
 
 .form-entry .flex-form-contain .horizontal-forms input[type='text'] {
   width: 50%;
+  height: 40px;
+  border: none;
+  text-indent: 30px;
 }
 
 .form-entry button {
   width: 100%;
+  text-transform: uppercase;
+  font-family: 'roboto' sans-serif;
+  font-weight: bold;
+  margin: 20px 0 40px 0;
+}
+
+input[type='text']:nth-of-type(2) {
+  margin-left: 10px;
+}
+
+input[type='text']::-webkit-input-placeholder {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+input[type='text']:-ms-input-placeholder {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+input[type='text']::-ms-input-placeholder {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+input[type='text']::placeholder {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+textarea {
+  margin-top: 20px;
+  border: none;
+  text-indent: 30px;
+}
+
+textarea::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+textarea:-ms-input-placeholder {
+  font-style: italic;
+}
+
+textarea::-ms-input-placeholder {
+  font-style: italic;
+}
+
+textarea::placeholder {
+  font-style: italic;
 }

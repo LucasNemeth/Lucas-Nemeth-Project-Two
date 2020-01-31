@@ -1,6 +1,10 @@
 header{
     ul{
         margin:auto;
+        width: 100%;
+        li{
+            margin:0 5%;
+        }
     }
     .header-bg{
         background-image: url(../styles/sophie-assets/blog-image-1.jpg);
@@ -101,7 +105,7 @@ main{
     background:white;
     padding: 20px;
     margin-left: 20px;
-    border-bottom: solid 3px $primary-color;
+    margin-top: 20px;
     .post-img-contain{
         width:15%;
     }
@@ -110,5 +114,8 @@ main{
         padding: 0 20px 20px 10px;
     }
     
+}
+.post-2{
+    border-bottom: 3px solid $primary-color;
 }
 
