@@ -1,0 +1,15 @@
+.form-entry{
+    margin-left:20px;
+    .flex-form-contain{
+        display: flex;
+        flex-direction: column;
+        .horizontal-forms{
+            display: flex;
+            input[type='text']{
+                width:50%;
+            }
+        }
+    }   button{
+        width: 100%;
+    }
+}

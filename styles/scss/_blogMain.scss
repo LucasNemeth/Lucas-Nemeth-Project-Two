@@ -1,7 +1,11 @@
 header{
+    ul{
+        margin:auto;
+    }
     .header-bg{
         background-image: url(../styles/sophie-assets/blog-image-1.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
         height:50vh;
         h1{
             margin: 0;
@@ -84,7 +88,27 @@ main{
     padding:20px;
     margin-top: 40px;
     margin-left: 20px;
+    border-bottom: 3px solid $primary-color;
 }
 .main-contain{
     width: 70%;
 }
+
+.post-1,
+.post-2{
+    display: flex;
+    flex-wrap: wrap;
+    background:white;
+    padding: 20px;
+    margin-left: 20px;
+    border-bottom: solid 3px $primary-color;
+    .post-img-contain{
+        width:15%;
+    }
+    .post-text-contain{
+        width: 85%;
+        padding: 0 20px 20px 10px;
+    }
+    
+}
+
