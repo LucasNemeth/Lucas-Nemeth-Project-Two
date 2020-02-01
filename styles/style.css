@@ -351,6 +351,88 @@ footer p {
   margin: 0;
 }
 
+.form-entry {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.form-entry .flex-form-contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-entry .flex-form-contain .horizontal-forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-entry .flex-form-contain .horizontal-forms input[type='text'] {
+  width: 50%;
+  height: 40px;
+  border: none;
+  text-indent: 30px;
+}
+
+.form-entry button {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: 'roboto' sans-serif;
+  font-weight: bold;
+  margin: 20px 0 40px 0;
+}
+
+input[type='text']:nth-of-type(2) {
+  margin-left: 10px;
+}
+
+input[type='text']::-webkit-input-placeholder {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+input[type='text']:-ms-input-placeholder {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+input[type='text']::-ms-input-placeholder {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+input[type='text']::placeholder {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+textarea {
+  margin-top: 20px;
+  border: none;
+  text-indent: 30px;
+}
+
+textarea::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+textarea:-ms-input-placeholder {
+  font-style: italic;
+}
+
+textarea::-ms-input-placeholder {
+  font-style: italic;
+}
+
+textarea::placeholder {
+  font-style: italic;
+}
+
 .top-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,15 +622,6 @@ header .header-bg {
   height: 50vh;
 }
 
-header .header-bg h1 {
-  margin: 0;
-  font-family: 'Lato', serif;
-  font-size: 6rem;
-  position: relative;
-  top: 260px;
-  left: 60px;
-}
-
 main {
   background: #F0EFED;
 }
@@ -599,7 +672,7 @@ main .wrapper:first-of-type {
 main .wrapper:first-of-type h1 {
   position: absolute;
   font-size: 6rem;
-  top: -11.5rem;
+  top: -8rem;
 }
 
 .recent-posts {
@@ -686,12 +759,15 @@ main .wrapper:first-of-type h1 {
   border-bottom: 3px solid #F6A823;
 }
 
-.form-entry {
-  margin-left: 20px;
-  margin-top: 20px;
+.contact-header-bg {
+  background-image: url(../styles/sophie-assets/contact-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
 }
 
-.form-entry .flex-form-contain {
+.contact-container {
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,71 +775,31 @@ main .wrapper:first-of-type h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 25%;
+  -ms-flex-item-align: start;
+      align-self: start;
+  margin-top: 20px;
+  padding: 20px;
 }
 
-.form-entry .flex-form-contain .horizontal-forms {
+.contact-container .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.form-entry .flex-form-contain .horizontal-forms input[type='text'] {
-  width: 50%;
-  height: 40px;
-  border: none;
-  text-indent: 30px;
+.contact-container .social i {
+  color: #F6A823;
+  font-size: 1.2rem;
+  margin-right: 10px;
 }
 
-.form-entry button {
+.contact-container h4,
+.contact-container li {
+  font-family: 'lato',sans-serif;
+  line-height: 1.5;
+}
+
+.form-entry {
   width: 100%;
-  text-transform: uppercase;
-  font-family: 'roboto' sans-serif;
-  font-weight: bold;
-  margin: 20px 0 40px 0;
-}
-
-input[type='text']:nth-of-type(2) {
-  margin-left: 10px;
-}
-
-input[type='text']::-webkit-input-placeholder {
-  font-style: italic;
-  padding-top: 10px;
-}
-
-input[type='text']:-ms-input-placeholder {
-  font-style: italic;
-  padding-top: 10px;
-}
-
-input[type='text']::-ms-input-placeholder {
-  font-style: italic;
-  padding-top: 10px;
-}
-
-input[type='text']::placeholder {
-  font-style: italic;
-  padding-top: 10px;
-}
-
-textarea {
-  margin-top: 20px;
-  border: none;
-  text-indent: 30px;
-}
-
-textarea::-webkit-input-placeholder {
-  font-style: italic;
-}
-
-textarea:-ms-input-placeholder {
-  font-style: italic;
-}
-
-textarea::-ms-input-placeholder {
-  font-style: italic;
-}
-
-textarea::placeholder {
-  font-style: italic;
 }

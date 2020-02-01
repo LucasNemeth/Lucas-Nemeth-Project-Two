@@ -11,16 +11,8 @@ header{
         background-size: cover;
         background-repeat: no-repeat;
         height:50vh;
-        h1{
-            margin: 0;
-            font-family: 'Lato', serif;
-            font-size: 6rem;
-            position: relative;
-            top:260px;
-            left:60px;
-        }
     }
-}
+}   
 main{
     background: #F0EFED;
     .about-container{
@@ -54,9 +46,9 @@ main{
         h1{
             position: absolute;
             font-size: 6rem;
-            top:-11.5rem
-        }
+            top:-8rem;
     }
+}
 }
 .recent-posts{
     background-color: white;
