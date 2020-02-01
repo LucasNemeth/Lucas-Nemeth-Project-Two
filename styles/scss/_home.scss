@@ -9,7 +9,7 @@
         align-items: center;
         img{
             position: absolute;
-            width: 40%;
+            width: 50%;
             left:0;
             top:25%;
         }
@@ -148,5 +148,17 @@
             width: calc((100% - 70px) / 3);
             margin: 40px 10px;
         }
+    }
+}
+
+
+//------------------Media Queries------------------------------------//
+@media(max-width:970px){
+    .hero-container img{
+        left:-40px;
+        top:120px;
+    }
+    .hero-container h1{
+        font-size: 80px;
     }
 }
