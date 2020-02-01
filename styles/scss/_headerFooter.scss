@@ -11,6 +11,10 @@ header {
             a{
                 font-family: 'roboto',sans-serif;
                 font-size: 1.5rem;
+                transition: linear 0.25s all;
+            }
+            a:hover{
+                color: white;
             }
             h2{
                 font-family: 'lato', serif;
@@ -29,5 +33,7 @@ footer{
         text-align: center;
         color: #F0EFED;
         margin:0;
+        align-self: center;
+        padding: 5px 0;
     }
 }

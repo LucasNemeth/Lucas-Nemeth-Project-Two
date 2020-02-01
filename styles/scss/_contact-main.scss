@@ -1,8 +1,16 @@
+
+
 .contact-header-bg{
     background-image: url(../styles/sophie-assets/contact-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height:50vh;
+    h1{
+        margin:0;
+        font-size: 6rem;
+        position: relative;
+        top:26rem;
+    }
 }
 
 .contact-container{
@@ -11,7 +19,7 @@
     flex-direction: column;
     width: 25%;
     align-self: start;
-    margin-top: 20px;
+    margin-top: 60px;
     padding:20px;
     .social{
         display: flex;
@@ -32,4 +40,5 @@
 
 .form-entry{
     width: 100%;
+    margin-top: 60px;
 }
