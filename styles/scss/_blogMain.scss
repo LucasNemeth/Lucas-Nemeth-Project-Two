@@ -136,12 +136,36 @@ main{
     .main-contain{
         width: auto;
     }
+    .form-entry{
+        .flex-form-contain{
+            .horizontal-forms{
+                flex-direction: column;
+                input[type='text']{
+                    width:auto;
+                }
+                input[type='text']:last-of-type{
+                    margin:10px 0;
+                }
+            }
+        }
+    }
+    .recent-posts{
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width:480px){
-    .flex-contain{    
-        .about-container{
-            flex-direction: column;
+    main{   
+        .wrapper:first-of-type{
+            .flex-contain{
+                .about-container{
+                    flex-direction: column;    // weird. looks like I have to write it out as a nested element
+                                                    
+                }
+            }
         }
+    }
+    .blog-post h2{
+        font-size: 2.5rem;
     }
 }

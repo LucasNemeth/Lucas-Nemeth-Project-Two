@@ -451,7 +451,7 @@ input[type='text']::placeholder {
 }
 
 textarea {
-  margin-top: 20px;
+  margin-top: 10px;
   border: none;
   text-indent: 30px;
   padding-top: 10px;
@@ -474,7 +474,7 @@ textarea::placeholder {
 }
 
 button:active {
-  background: #03747c;
+  background: #285E64;
 }
 
 .top-flex-container {
@@ -974,14 +974,32 @@ main .wrapper:first-of-type h1 {
   .main-contain {
     width: auto;
   }
-}
-
-@media (max-width: 480px) {
-  .flex-contain .about-container {
+  .form-entry .flex-form-contain .horizontal-forms {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .form-entry .flex-form-contain .horizontal-forms input[type='text'] {
+    width: auto;
+  }
+  .form-entry .flex-form-contain .horizontal-forms input[type='text']:last-of-type {
+    margin: 10px 0;
+  }
+  .recent-posts {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  main .wrapper:first-of-type .flex-contain .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-post h2 {
+    font-size: 2.5rem;
   }
 }
 

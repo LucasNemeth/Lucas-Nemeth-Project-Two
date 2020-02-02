@@ -30,7 +30,7 @@ input[type='text']::placeholder{
 }
 
 textarea{
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     text-indent: 30px;
     padding-top: 10px;
@@ -40,5 +40,5 @@ textarea::placeholder{
 }
 
 button:active{
-    background: rgb(3, 116, 124);
+    background: #285E64;
 }
