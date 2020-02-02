@@ -63,22 +63,28 @@ footer{
 @media (max-width:530px){
     .hamburger i {
         visibility: visible;
+        z-index:999;
     }
     .top-nav{
         visibility: hidden;
-        position: absolute;
-        background: white;
+        position: fixed;
+        background:$secondary-color;
         text-align: center;
         display: block !important;
         width: 100%;
-        padding-bottom: 20px;
-        top:-200px;
+        height: 100vh;
+        padding-top: 115px;
+        top:0 !important;
+        left:0;
         transition: all 1s ease;
-        z-index: 1;        
+        z-index: 1;    
+        li{
+            padding: 30px 0;
+        }    
     }
     
-    .top-nav.active{
-        visibility: visible;
+    ul.top-nav.active{
+        visibility: visible !important;
         top:50px;
         transition: all 1s ease;
     }

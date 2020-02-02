@@ -384,21 +384,28 @@ footer p {
 @media (max-width: 530px) {
   .hamburger i {
     visibility: visible;
+    z-index: 999;
   }
   .top-nav {
     visibility: hidden;
-    position: absolute;
-    background: white;
+    position: fixed;
+    background: #05AFC1;
     text-align: center;
     display: block !important;
     width: 100%;
-    padding-bottom: 20px;
-    top: -200px;
+    height: 100vh;
+    padding-top: 115px;
+    top: 0 !important;
+    left: 0;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     z-index: 1;
   }
-  .top-nav.active {
+  .top-nav li {
+    padding: 30px 0;
+  }
+  ul.top-nav.active {
+    visibility: visible !important;
     top: 50px;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -620,31 +627,24 @@ button:active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
 .home-content .home-container i {
   z-index: 1;
-  padding-top: 20px;
   position: relative;
   top: 8px;
   right: 3px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background: #F6A823;
+  margin-right: 20px;
 }
 
 .home-content .home-container h3 {
   margin-bottom: 0;
-}
-
-.home-content .home-container h3:before {
-  content: '';
-  display: inline-block;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #F6A823;
-  right: 35px;
-  top: 10px;
 }
 
 .home-content .home-container li {
@@ -780,8 +780,9 @@ button:active {
     width: auto;
   }
   .top-flex-container .hero-container h1 {
-    font-size: 60px;
+    font-size: 45px;
     padding: 50px 0;
+    margin-top: 100px;
   }
   .top-flex-container .hero-container h1 img {
     top: -15px;
