@@ -458,7 +458,6 @@ textarea::placeholder {
 
 .top-flex-container .hero-container {
   width: 50%;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,15 +469,16 @@ textarea::placeholder {
           align-items: center;
 }
 
-.top-flex-container .hero-container img {
-  position: absolute;
-  width: 50%;
-  left: 0;
-  top: 25%;
-}
-
 .top-flex-container .hero-container h1 {
   padding: 90px auto;
+  position: relative;
+}
+
+.top-flex-container .hero-container h1 img {
+  position: absolute;
+  max-width: 190px;
+  left: -55px;
+  top: -50px;
 }
 
 .hero-img-container {
@@ -490,7 +490,7 @@ textarea::placeholder {
           box-shadow: 10px 10px whitesmoke;
   position: relative;
   top: 25px;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .lower-header {
@@ -578,6 +578,9 @@ textarea::placeholder {
 .home-content .home-container i {
   z-index: 1;
   padding-top: 20px;
+  position: relative;
+  top: 8px;
+  right: 3px;
 }
 
 .home-content .home-container h3 {
@@ -659,13 +662,59 @@ textarea::placeholder {
   margin: 40px 10px;
 }
 
-@media (max-width: 970px) {
-  .hero-container img {
-    left: -40px;
-    top: 120px;
-  }
+@media (max-width: 940px) {
   .hero-container h1 {
     font-size: 80px;
+  }
+  .hero-container h1 img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-flex-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .hero-img-container {
+    width: 25%;
+  }
+  .home-content .home-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home-content .home-container li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 625px) {
+  .mid-top .favourite-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mid-top .favourite-flex .favourite-img {
+    width: 100%;
+  }
+  .mid-top .favourite-flex .favourite-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .mid-bottom .travel-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .mid-bottom .travel-flex .travel-container {
+    width: 100%;
+  }
+  .mid-bottom .travel-flex .travel-img {
+    width: 100%;
   }
 }
 
@@ -830,7 +879,7 @@ main .wrapper:first-of-type h1 {
   background-image: url(../styles/sophie-assets/contact-image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 90vh;
 }
 
 .contact-header-bg h1 {
