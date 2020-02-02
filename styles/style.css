@@ -454,6 +454,7 @@ textarea {
   margin-top: 20px;
   border: none;
   text-indent: 30px;
+  padding-top: 10px;
 }
 
 textarea::-webkit-input-placeholder {
@@ -572,8 +573,9 @@ textarea::placeholder {
 .mid-bottom .travel-flex .travel-container {
   width: calc(50% - 20px);
   margin-right: 20px;
-  padding: 40px;
+  padding: 0 40px;
   background-color: white;
+  text-align: right;
 }
 
 .mid-bottom .travel-flex .travel-img {
@@ -589,7 +591,7 @@ textarea::placeholder {
 
 .home-content {
   background-color: #F0EFED;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .home-content .home-container {
@@ -598,6 +600,7 @@ textarea::placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 .home-content .home-container i {
@@ -625,7 +628,8 @@ textarea::placeholder {
 }
 
 .home-content .home-container li {
-  width: 50%;
+  width: calc(50% - 20px);
+  margin: 0 10px;
 }
 
 .home-content .home-container p {
@@ -644,6 +648,8 @@ textarea::placeholder {
 
 .journey .wrapper .journey-img-container {
   width: calc(30% - 25px);
+  margin-top: 30px;
+  margin-right: 30px;
 }
 
 .journey .wrapper .journey-img-container img {
@@ -713,9 +719,6 @@ textarea::placeholder {
   .home-content .home-container li {
     width: 100%;
   }
-}
-
-@media (max-width: 625px) {
   .mid-top .favourite-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -728,6 +731,7 @@ textarea::placeholder {
   .mid-top .favourite-flex .favourite-container {
     width: 100%;
     padding: 20px;
+    text-align: center;
   }
   .mid-bottom .travel-flex {
     -webkit-box-orient: vertical;
@@ -737,6 +741,8 @@ textarea::placeholder {
   }
   .mid-bottom .travel-flex .travel-container {
     width: 100%;
+    margin: 30px 0;
+    text-align: center;
   }
   .mid-bottom .travel-flex .travel-img {
     width: 100%;
@@ -752,6 +758,13 @@ textarea::placeholder {
   }
   .top-flex-container .hero-container {
     width: auto;
+  }
+  .top-flex-container .hero-container h1 {
+    font-size: 60px;
+    padding: 50px 0;
+  }
+  .top-flex-container .hero-container h1 img {
+    top: -15px;
   }
   .top-flex-container .hero-img-container {
     width: auto;
