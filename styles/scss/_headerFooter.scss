@@ -36,6 +36,8 @@ header {
     color:#fcfcfc
 }
 
+//---------------------hamburger menu--------------------------------------------//
+
 //--------------------header ends /  footer begins ----------------------------//
 
 
@@ -64,5 +66,20 @@ footer{
     }
     .top-nav{
         visibility: hidden;
+        position: absolute;
+        background: white;
+        text-align: center;
+        display: block !important;
+        width: 100%;
+        padding-bottom: 20px;
+        top:-200px;
+        transition: all 1s ease;
+        z-index: 1;        
+    }
+    
+    .top-nav.active{
+        visibility: visible;
+        top:50px;
+        transition: all 1s ease;
     }
 }

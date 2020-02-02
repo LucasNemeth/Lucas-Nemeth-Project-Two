@@ -387,6 +387,21 @@ footer p {
   }
   .top-nav {
     visibility: hidden;
+    position: absolute;
+    background: white;
+    text-align: center;
+    display: block !important;
+    width: 100%;
+    padding-bottom: 20px;
+    top: -200px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  .top-nav.active {
+    top: 50px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
   }
 }
 
@@ -1054,4 +1069,14 @@ main .wrapper:first-of-type h1 {
 .form-entry {
   width: 100%;
   margin-top: 60px;
+}
+
+@media (max-width: 670px) {
+  .contact-header-bg h1 {
+    font-size: 5rem;
+    top: 26.5rem;
+  }
+  .contact-container {
+    visibility: hidden;
+  }
 }

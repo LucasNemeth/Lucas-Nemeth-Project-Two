@@ -42,3 +42,22 @@
     width: 100%;
     margin-top: 60px;
 }
+
+//-------------media queries-----------//
+@media(max-width:670px){
+    // .contact-container{
+    //     width:100%;
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    //     .social{
+    //         flex-direction: column;
+    //     }
+    // }
+    .contact-header-bg h1{
+        font-size: 5rem;
+        top:26.5rem;
+    }
+    .contact-container{
+        visibility: hidden;
+    }
+}
