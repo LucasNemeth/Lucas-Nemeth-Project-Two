@@ -38,3 +38,7 @@ textarea{
 textarea::placeholder{
     font-style: italic;
 }
+
+button:active{
+    background: rgb(3, 116, 124);
+}

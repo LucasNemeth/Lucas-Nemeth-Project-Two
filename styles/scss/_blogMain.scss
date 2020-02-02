@@ -114,3 +114,34 @@ main{
     padding-right:20px;
 }
 
+
+
+//------------------media queries------------------//
+
+@media(max-width:670px){
+    main{
+        .wrapper:first-of-type{
+            flex-direction: column-reverse;
+            .flex-contain{
+                width:auto;
+                .about-container{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+    .about-text{
+        padding: 20px;
+    }
+    .main-contain{
+        width: auto;
+    }
+}
+
+@media(max-width:480px){
+    .flex-contain{    
+        .about-container{
+            flex-direction: column;
+        }
+    }
+}

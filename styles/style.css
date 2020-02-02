@@ -473,6 +473,10 @@ textarea::placeholder {
   font-style: italic;
 }
 
+button:active {
+  background: #03747c;
+}
+
 .top-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -946,6 +950,39 @@ main .wrapper:first-of-type h1 {
 
 .form-entry {
   padding-right: 20px;
+}
+
+@media (max-width: 670px) {
+  main .wrapper:first-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .wrapper:first-of-type .flex-contain {
+    width: auto;
+  }
+  main .wrapper:first-of-type .flex-contain .about-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-text {
+    padding: 20px;
+  }
+  .main-contain {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .flex-contain .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .contact-header-bg {
