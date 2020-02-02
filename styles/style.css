@@ -346,9 +346,19 @@ header ul li a:active {
   color: white;
 }
 
-header ul li h2 {
+.title-anchor {
   font-family: 'lato', serif;
   font-weight: bold;
+  font-size: 3rem;
+}
+
+.hamburger i {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  font-size: 2.5rem;
+  visibility: hidden;
+  color: #fcfcfc;
 }
 
 footer {
@@ -363,6 +373,21 @@ footer p {
       -ms-grid-row-align: center;
       align-self: center;
   padding: 5px 0;
+}
+
+@media (max-width: 625px) {
+  header ul {
+    width: 70%;
+  }
+}
+
+@media (max-width: 530px) {
+  .hamburger i {
+    visibility: visible;
+  }
+  .top-nav {
+    visibility: hidden;
+  }
 }
 
 .form-entry {
@@ -718,6 +743,21 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 530px) {
+  .top-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top-flex-container .hero-container {
+    width: auto;
+  }
+  .top-flex-container .hero-img-container {
+    width: auto;
+  }
+}
+
 header ul {
   margin: auto;
   width: 100%;
@@ -879,7 +919,7 @@ main .wrapper:first-of-type h1 {
   background-image: url(../styles/sophie-assets/contact-image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 50vh;
 }
 
 .contact-header-bg h1 {

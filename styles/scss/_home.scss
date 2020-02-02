@@ -209,6 +209,14 @@
     }
 }
 
-@media(max-width:480px){
-    
+@media (max-width:530px){
+    .top-flex-container{
+        flex-direction: column;
+        .hero-container{
+            width:auto
+        }
+        .hero-img-container{
+            width:auto;
+        }
+    }
 }
