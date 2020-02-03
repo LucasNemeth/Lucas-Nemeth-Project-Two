@@ -42,3 +42,12 @@ textarea::placeholder{
 button:active{
     background: #285E64;
 }
+
+//----------media queries-------------------//
+@media(max-width:670px){
+    .form-entry{
+        margin-left: 0;
+        width: auto;
+        padding:0 !important;
+    }
+}
