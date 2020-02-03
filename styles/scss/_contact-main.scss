@@ -84,12 +84,12 @@ main{
         }
     }
 }
-@media(max-width:480px){
+@media(max-width:480px){ //-----------------------I spent like 2 hours trying to figure out why it wasnt working then i found out                                                       I did @media(MEDIA-WIDTH)    I need sleep.
     main{
         .wrapper:first-of-type{
             .flex-heading{
                 h1{
-                    font-size: 4rem; //----------having some trouble here. for some reason it's not
+                    font-size: 4rem; 
                     top:-10rem;
 
                 }
