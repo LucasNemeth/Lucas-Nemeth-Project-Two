@@ -65,6 +65,7 @@ main{
         width:100%;
         flex-direction: row;
         justify-content: space-around;
+        margin:20px 0;
         .social{
             flex-direction: column;
         }
@@ -83,13 +84,26 @@ main{
         }
     }
 }
-@media(media-width:480px){
+@media(max-width:480px){
     main{
         .wrapper:first-of-type{
             .flex-heading{
                 h1{
-                    font-size: 4.5rem;
+                    font-size: 4rem; //----------having some trouble here. for some reason it's not
                     top:-10rem;
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:390px){
+        main{
+        .wrapper:first-of-type{
+            .flex-heading{
+                h1{
+                    left:6rem;
                 }
             }
         }
