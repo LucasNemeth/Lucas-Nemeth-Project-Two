@@ -596,8 +596,8 @@ button:active {
 }
 
 .mid-top .favourite-flex .favourite-img img {
-  -webkit-box-shadow: -140px 10px #A82706, 10px 10px #A82706;
-          box-shadow: -140px 10px #A82706, 10px 10px #A82706;
+  -webkit-box-shadow: -180px 10px #A82706, 10px 10px #A82706;
+          box-shadow: -180px 10px #A82706, 10px 10px #A82706;
 }
 
 .mid-bottom .travel-flex {
@@ -622,8 +622,8 @@ button:active {
 }
 
 .mid-bottom .travel-flex .travel-img img {
-  -webkit-box-shadow: 140px 10px #F6A823, 10px 10px #F6A823;
-          box-shadow: 140px 10px #F6A823, 10px 10px #F6A823;
+  -webkit-box-shadow: 180px 10px #F6A823, 10px 10px #F6A823;
+          box-shadow: 180px 10px #F6A823, 10px 10px #F6A823;
 }
 
 .home-content {
